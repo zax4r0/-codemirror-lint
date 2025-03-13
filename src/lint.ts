@@ -191,7 +191,7 @@ const togglePanel = StateEffect.define<boolean>()
 
 const movePanelSelection = StateEffect.define<SelectedDiagnostic>()
 
-const lintState = StateField.define<LintState>({
+export const lintState = StateField.define<LintState>({
   create() {
     return new LintState(Decoration.none, null, null)
   },
